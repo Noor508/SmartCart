@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="26dp"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To SmartCart"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/berkshire_swash"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- First Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/calculatorButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:onClick="onclickcalculator"
+            android:text="Calculator"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/baseline_calculate_24"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="Database"
+            android:textSize="20sp"
+
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:id="@+id/userdb"
+            android:onClick="onclickUserDb" />
+    </LinearLayout>
+
+    <!-- Second Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/formButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Form"
+            android:drawableLeft="@drawable/baseline_how_to_reg_24"
+
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:onClick="onclickform" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/itemproduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/baseline_category_24"
+
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:onClick="onclickitem" />
+    </LinearLayout>
+
+    <!-- Third Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/showStatic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:onClick="onclickstaticfragment"
+            android:text="Static"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/DFragmentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:onClick="onclickDFragment"
+            android:text="Dynamic"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Fourth Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/get"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="onClickGet"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:text="GET"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/post"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="POST"
+            android:textSize="20sp"
+            android:onClick="onClickPost"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Fifth Row of Buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/show_custom_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="showCustomDialog"
+            android:text="Custom"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/show_dialog_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue"
+            android:onClick="onClickShowDialog"
+            android:text="Default"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/show_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/blue"
+            android:text="Show Notification"
+            android:drawableLeft="@drawable/baseline_circle_notifications_24"
+
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/DFragmentButton"
+        android:layout_marginTop="20dp" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragUpper"
+        android:name="com.example.devilapplication.Fragments.upperFragment"
+        android:layout_weight="1"/>
+</LinearLayout>
